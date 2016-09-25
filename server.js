@@ -18,12 +18,12 @@ res.send('Articl one requested and will be served here.');
 });
 
 app.get ('/article-two',function (req,res){
-res.send ('Artcile two requested and will be served here');
+res.send('Artcile two requested and will be served here');
 });
 
 
 app.get ('/article-three',function (req,res){
-res.send ('Artcile three requested and will be served here');
+res.send('Artcile three requested and will be served here');
 });
 
 app.get('/ui/madi.png', function (req, res) {
