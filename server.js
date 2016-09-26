@@ -15,7 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get ('/article-one',function (req,res){
 
-res.send(path.join(__dirname, 'ui', 'article-one.html'));
+res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 
 });
 
@@ -23,7 +23,7 @@ res.send(path.join(__dirname, 'ui', 'article-one.html'));
 
 app.get ('/article-two',function (req,res){
 
-res.send('Artcile two requested and will be served here');
+res.sendFile('Artcile two requested and will be served here');
 
 });
 
@@ -32,7 +32,7 @@ res.send('Artcile two requested and will be served here');
 
 app.get ('/article-three',function (req,res){
 
-res.send('Artcile three requested and will be served here');
+res.sendFile('Artcile three requested and will be served here');
 
 });
 
