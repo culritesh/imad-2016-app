@@ -1,15 +1,16 @@
 	var button = document.getElementById('counter');
 
 	button.onclick = function (){
-		var request = XMLHTTPRequest;
+		var request = new XMLHTTPRequest;
 		
 		request.onreadystatechange = function(){
-		if (request.readystate == XMLHTTPRequest.done) 
+		if (request.readystate == XMLHTTPRequest.Done) 
 		 {
 		   if (request.status ==200)
 			{
 			  var counter;
-			  counter = request.responsetext;
+			  counter = request.responseText;
+			  var span = document.getElementById('span');
 			  span.innerhtml= counter.tostring;
 			}	   
 		
