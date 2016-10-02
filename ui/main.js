@@ -11,7 +11,7 @@
 			  var counter;
 			  counter = request.responseText;
 			  var span = document.getElementById('span');
-			  span.innerhtml= counter.tostring();
+			  span.innerHTML = counter.tostring();
 			}	   
 		
 		 } 
