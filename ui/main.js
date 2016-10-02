@@ -1,7 +1,7 @@
 	var button = document.getElementById('counter');
 
 	button.onclick = function (){
-		var request = new XMLHTTPRequest();
+	/*	var request = new XMLHTTPRequest();
 		
 		request.onreadystatechange = function(){
 		if (request.readystate == XMLHTTPRequest.Done) 
@@ -19,4 +19,10 @@
 		}
 	request.open('Get','hhtp//culritesh.imad.hasura-app.io',true);
 	request.send(null);
+	*/
+	
+			  var counter;
+			  counter = counter + 1;
+			  var span = document.getElementById('span');
+			  span.innerHTML = counter.tostring();
 	};
