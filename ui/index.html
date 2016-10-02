@@ -30,13 +30,37 @@
 		</div>
 		<div class="footer">
 			This input button <button id ="counter"> Click Me </button> has been clicked <span id ="count"> 0 </span>times.
-		</div>
+		</div>	
 		
 		<script type="text/javascript" language="javascript">
-			alert('welcome')
-		</script>
+			var button = document.getElementById('counter');
+
+	button.onclick = function (){
+	/*	var request = new XMLHTTPRequest();
 		
-		<script type="text/javascript" src="/ui/main.js">
-		</script>	
+		request.onreadystatechange = function(){
+		if (request.readystate == XMLHTTPRequest.Done) 
+		 {
+		   if (request.status ==200)
+			{
+			  var counter;
+			  counter = request.responseText;
+			  var span = document.getElementById('span');
+			  span.innerHTML = counter.tostring();
+			}	   
+		
+		 } 
+		
+		}
+	request.open('Get','hhtp//culritesh.imad.hasura-app.io',true);
+	request.send(null);
+	*/
+	
+			  var counter;
+			  counter = counter + 1;
+			  var span = document.getElementById('span');
+			  span.innerHTML = counter.tostring();
+	};
+	</script>
     </body>
 </html>
